@@ -1,0 +1,110 @@
+body{
+    display: grid;
+    place-items: center;
+    background:linear-gradient(90deg,rgb(47, 39, 39),rgb(169, 169, 220),rgb(93, 62, 67));
+}
+
+.container{
+    background-color: black;
+    height: 440px;
+    width: 340px;
+    color: white;
+    padding: 40px;
+    padding-bottom: 50px;
+    border-radius: 17px;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin-top: 100px;
+    
+}
+.login{
+    background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.container input[type="email"],
+.container input[type="password"]{
+    opacity: 1;
+    display: block;
+    outline: none;
+    border: none;
+    width: 90%;
+    padding: 13px 18px;
+    margin: 20px 0 0 0;
+    font-size: 0.8em;
+    border-radius: 100px;
+    background-color: rgb(21, 20, 20);
+    color: white;
+}
+.container input:focus{
+    animation: bounce 1s;
+    --webkit-appearance:none;
+
+}
+.container input[type="button"],
+.container input[type="submit"],h1{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 13px;
+    margin: 40px 0 0 0;
+    border-radius: 100px;
+    font-weight: 600;
+    animation: bounce 1.1s;
+}
+h1{
+    padding: 0;
+    position: relative;
+    top: -35px;
+    display: block;
+    margin-bottom: 0px;
+    font-size: 1.3em;
+
+}
+.btn{
+    background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    color: white;
+    padding: 16px !important;
+}
+.btn:hover{
+    background: linear-gradient(144deg, #1e1e1e, #1e1e1e 50%, #1e1e1e);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.container input[type="email"]{
+    animation: bounce 1.1s;
+    
+
+}
+.container input[type="password"]{
+    animation: bounce 1.3s;
+
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(-250px);
+    }
+
+}
+@keyframes bounce1{
+    0%{
+        opacity: 0;
+    }
+    40%{
+        transform: translateY(-100);
+    }
+}
+@keyframes bounce2{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
+
